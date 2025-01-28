@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f9;
+    background-color: #eef2f3;
     margin: 0;
 }
 
@@ -20,6 +20,7 @@ body {
 h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #333;
 }
 
 input {
@@ -28,6 +29,7 @@ input {
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 16px;
 }
 
 button {
@@ -37,6 +39,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
@@ -55,8 +58,30 @@ li {
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    font-size: 18px;
 }
 
 button.remove {
     background-color: red;
+}
+
+button.remove:hover {
+    background-color: #cc3333;
+}
+
+button.edit {
+    background-color: #f9a825;
+}
+
+button.edit:hover {
+    background-color: #f57f17;
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: gray;
 }
